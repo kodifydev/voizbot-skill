@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://api.voizbot.com/v1",
+  "apiToken": "vb_...",
+  "phoneNumberId": "pn_..."
+}
