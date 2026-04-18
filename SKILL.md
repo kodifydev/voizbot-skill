@@ -1,5 +1,5 @@
 ---
-name: voicebot-phone-calls
+name: voizbot-phone-calls
 description: Place and inspect Voizbot outbound phone calls through the multitenant public API when the user wants an agent to call a person or business, follow up a call, or review its transcript and outcome.
 version: 2.0.0
 ---
@@ -86,7 +86,7 @@ Close condition: repeat the final date, local time, and next step before ending 
 ### List phone numbers
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py numbers
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py numbers
 ```
 
 Use this first if you do not already know the `phoneNumberId`.
@@ -94,19 +94,19 @@ Use this first if you do not already know the `phoneNumberId`.
 ### List outbound templates
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py templates
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py templates
 ```
 
 ### List function tools
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py tools
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py tools
 ```
 
 ### Start a call
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py create \
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py create \
   --to "+34600111222" \
   --phone-number-id "pn_123" \
   --template-id "out_tpl_sales" \
@@ -133,19 +133,19 @@ Useful options:
 ### List recent calls
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py calls --filter recent --limit 10
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py calls --filter recent --limit 10
 ```
 
 ### Get one call
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py call call_abc123
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py call call_abc123
 ```
 
 ### Get one transcript
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py transcript call_abc123
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py transcript call_abc123
 ```
 
 ## Monitoring guidance

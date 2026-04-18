@@ -2,7 +2,7 @@
 set -euo pipefail
 
 BASE_URL="${VOIZBOT_SKILL_BASE_URL:-https://raw.githubusercontent.com/kodifydev/voizbot-skill/main}"
-SKILL_ROOT="${HERMES_SKILL_DIR:-$HOME/.hermes/skills/voicebot-phone-calls}"
+SKILL_ROOT="${HERMES_SKILL_DIR:-$HOME/.hermes/skills/voizbot-phone-calls}"
 SCRIPT_DIR="$SKILL_ROOT/scripts"
 CONFIG_DIR="${VOIZBOT_CONFIG_DIR:-$HOME/.config/voizbot}"
 CONFIG_PATH="$CONFIG_DIR/config.json"
