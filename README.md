@@ -9,6 +9,17 @@ Public skill bundle for AI agents that need to place and inspect Voizbot outboun
 - `install.sh` — installer that drops the skill into `~/.hermes/skills/voizbot-phone-calls`
 - `examples/config.example.json` — minimal local config example
 
+## Install with agent skill CLIs
+
+```bash
+# Vercel skills CLI / skills.sh
+npx skills add kodifydev/voizbot-skill
+
+# GitHub CLI agent skills
+# If your gh version supports it:
+gh skill install kodifydev/voizbot-skill
+```
+
 ## Quick install
 
 ```bash
@@ -41,3 +52,5 @@ python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py create --t
 - The skill identifier remains `voizbot-phone-calls` to match the existing Voizbot public bundle slug.
 - The API base is `https://api.voizbot.com/v1`.
 - The installer and script can be used standalone without the full Voizbot monorepo.
+- Marketplace categories: Communication, Speech & Transcription, Productivity & Tasks, AI & LLMs.
+- Short listing description: Voizbot lets AI agents place, inspect, and audit outbound phone calls via the Voizbot API.

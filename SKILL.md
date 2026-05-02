@@ -2,6 +2,7 @@
 name: voizbot-phone-calls
 description: Place and inspect Voizbot outbound phone calls through the multitenant public API when the user wants an agent to call a person or business, follow up a call, or review its transcript and outcome.
 version: 2.0.0
+license: MIT
 ---
 
 # Voizbot Phone Calls
