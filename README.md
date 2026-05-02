@@ -6,8 +6,19 @@ Public skill bundle for AI agents that need to place and inspect Voizbot outboun
 
 - `SKILL.md` — publishable skill definition in the expected skills.sh-style format
 - `scripts/voizbot_calls.py` — standalone Python CLI for the Voizbot public API
-- `install.sh` — installer that drops the skill into `~/.hermes/skills/voicebot-phone-calls`
+- `install.sh` — installer that drops the skill into `~/.hermes/skills/voizbot-phone-calls`
 - `examples/config.example.json` — minimal local config example
+
+## Install with agent skill CLIs
+
+```bash
+# Vercel skills CLI / skills.sh
+npx skills add kodifydev/voizbot-skill
+
+# GitHub CLI agent skills
+# If your gh version supports it:
+gh skill install kodifydev/voizbot-skill
+```
 
 ## Quick install
 
@@ -30,14 +41,16 @@ Create `~/.config/voizbot/config.json`:
 ## Useful commands
 
 ```bash
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py numbers
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py templates
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py tools
-python3 ~/.hermes/skills/voicebot-phone-calls/scripts/voizbot_calls.py create --to "+34600000000" --dry-run
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py numbers
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py templates
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py tools
+python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py create --to "+34600000000" --dry-run
 ```
 
 ## Notes
 
-- The skill identifier remains `voicebot-phone-calls` to match the existing Voizbot public bundle slug.
+- The skill identifier remains `voizbot-phone-calls` to match the existing Voizbot public bundle slug.
 - The API base is `https://api.voizbot.com/v1`.
 - The installer and script can be used standalone without the full Voizbot monorepo.
+- Marketplace categories: Communication, Speech & Transcription, Productivity & Tasks, AI & LLMs.
+- Short listing description: Voizbot lets AI agents place, inspect, and audit outbound phone calls via the Voizbot API.
