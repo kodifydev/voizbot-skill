@@ -48,6 +48,8 @@ The bundled script also accepts environment variables:
 
 CLI arguments override config and env vars.
 
+The examples below assume the current working directory is the installed `voizbot-phone-calls` skill folder. The CLI is referenced relative to this `SKILL.md` as `./scripts/voizbot_calls.py` so the skill works in any agent directory layout.
+
 ## Core workflow
 
 1. Confirm the call target and objective.
@@ -87,7 +89,7 @@ Close condition: repeat the final date, local time, and next step before ending 
 ### List phone numbers
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py numbers
+python3 ./scripts/voizbot_calls.py numbers
 ```
 
 Use this first if you do not already know the `phoneNumberId`.
@@ -95,19 +97,19 @@ Use this first if you do not already know the `phoneNumberId`.
 ### List outbound templates
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py templates
+python3 ./scripts/voizbot_calls.py templates
 ```
 
 ### List function tools
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py tools
+python3 ./scripts/voizbot_calls.py tools
 ```
 
 ### Start a call
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py create \
+python3 ./scripts/voizbot_calls.py create \
   --to "+34600111222" \
   --phone-number-id "pn_123" \
   --template-id "out_tpl_sales" \
@@ -134,19 +136,19 @@ Useful options:
 ### List recent calls
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py calls --filter recent --limit 10
+python3 ./scripts/voizbot_calls.py calls --filter recent --limit 10
 ```
 
 ### Get one call
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py call call_abc123
+python3 ./scripts/voizbot_calls.py call call_abc123
 ```
 
 ### Get one transcript
 
 ```bash
-python3 ~/.hermes/skills/voizbot-phone-calls/scripts/voizbot_calls.py transcript call_abc123
+python3 ./scripts/voizbot_calls.py transcript call_abc123
 ```
 
 ## Monitoring guidance
